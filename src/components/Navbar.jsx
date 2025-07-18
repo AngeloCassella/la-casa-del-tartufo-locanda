@@ -27,7 +27,7 @@ const TikTokIcon = (props) => (
 
 const Navbar = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const navLinks = [
