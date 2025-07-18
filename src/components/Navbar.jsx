@@ -7,9 +7,7 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemText,
-  useMediaQuery,
-  useTheme
+  ListItemText
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
@@ -26,7 +24,7 @@ const TikTokIcon = (props) => (
 );
 
 const Navbar = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [openDrawer, setOpenDrawer] = useState(false);
 
