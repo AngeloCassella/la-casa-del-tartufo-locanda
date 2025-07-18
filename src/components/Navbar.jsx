@@ -68,7 +68,7 @@ const Navbar = () => {
               src={logo}
               alt="Logo Locanda"
               style={{
-                height: '70px',
+                height: '90px',
                 maxHeight: '100%',
                 objectFit: 'contain',
                 borderRadius: 8,
