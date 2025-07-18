@@ -1,0 +1,30 @@
+[
+  {
+    "categoria": "Antipasti",
+    "piatti": [
+      {
+        "nome": "Bruschette al tartufo",
+        "descrizione": "Pane tostato con crema di tartufo nero",
+        "prezzo": "8.00",
+        "immagine": "bruschette.jpg"
+      },
+      {
+        "nome": "Tagliere misto",
+        "descrizione": "Salumi, formaggi locali e miele",
+        "prezzo": "12.00",
+        "immagine": "tagliere.jpg"
+      }
+    ]
+  },
+  {
+    "categoria": "Primi",
+    "piatti": [
+      {
+        "nome": "Scialatielli al tartufo",
+        "descrizione": "Pasta fresca con salsa cremosa al tartufo",
+        "prezzo": "14.00",
+        "immagine": "scialatielli.jpg"
+      }
+    ]
+  }
+]
