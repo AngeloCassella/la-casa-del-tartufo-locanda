@@ -1,15 +1,36 @@
 import React, { useState } from 'react';
 import {
-  Box, Typography, Grid, Card, CardMedia, CardContent, Button, ButtonGroup
+  Box,
+  Typography,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Button,
+  ButtonGroup
 } from '@mui/material';
-import menu from '../data/menu.json';
+
+import antipasti from '../data/antipasti.json';
+import primi from '../data/primi.json';
+import secondi from '../data/secondi.json';
+import vini from '../data/vini.json';
+import bevande from '../data/bevande.json';
+
+const categorieDati = {
+  Antipasti: antipasti,
+  Primi: primi,
+  Secondi: secondi,
+  Vini: vini,
+  Bevande: bevande
+};
 
 const MenuSection = () => {
   const [categoria, setCategoria] = useState('Antipasti');
-  const categorie = Object.keys(menu);
+  const categorie = Object.keys(categorieDati);
 
   return (
     <Box px={2} pb={6}>
+      {/* Bottoni di selezione */}
       <Box textAlign="center" mt={2}>
         <ButtonGroup variant="contained" sx={{ flexWrap: 'wrap' }}>
           {categorie.map((cat) => (
@@ -28,12 +49,14 @@ const MenuSection = () => {
         </ButtonGroup>
       </Box>
 
+      {/* Titolo sezione */}
       <Typography variant="h4" sx={{ mt: 4, mb: 2, color: '#7d1d1d' }}>
         {categoria}
       </Typography>
 
+      {/* Card dei piatti */}
       <Grid container spacing={3}>
-        {menu[categoria].map((item, idx) => (
+        {categorieDati[categoria].map((item, idx) => (
           <Grid item xs={12} sm={6} md={4} key={idx}>
             <Card sx={{ height: '100%' }}>
               <CardMedia

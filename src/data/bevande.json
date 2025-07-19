@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Acqua naturale",
+    "descrizione": "Bottiglia da 1L",
+    "prezzo": "2€",
+    "immagine": "acqua.jpg"
+  },
+  {
+    "nome": "Coca-Cola",
+    "descrizione": "Bottiglia da 33cl",
+    "prezzo": "3€",
+    "immagine": "coca.jpg"
+  },
+  {
+    "nome": "Birra artigianale",
+    "descrizione": "Chiara alla spina 50cl",
+    "prezzo": "5€",
+    "immagine": "birra.jpg"
+  }
+]

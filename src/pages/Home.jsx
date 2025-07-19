@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
-import welcomeImage from '../assets/menu/antipasto1.jpg'; // o immagine principale
+import welcomeImage from '../assets/menu/fotoDiBenvenuto.jpeg'; // o immagine principale
 
 const Home = () => {
   return (
@@ -8,10 +8,9 @@ const Home = () => {
       <img
         src={welcomeImage}
         alt="Benvenuto"
-        style={{ width: '100%', maxWidth: '700px', borderRadius: 8 }}
+        style={{ width: '90%', maxWidth: '700px', borderRadius: 8 }}
       />
       <Typography variant="h5" sx={{ mt: 3, mb: 2 }}>
-        Benvenuti alla Locanda "La Casa del Tartufo"
       </Typography>
 
       <Stack spacing={2} mt={3} px={2}>
@@ -25,7 +24,7 @@ const Home = () => {
           BEVANDE
         </Button>
         <Button variant="contained" fullWidth sx={{ backgroundColor: '#e0e0e0', color: '#000' }}>
-          ALTRO
+          CAMERE
         </Button>
       </Stack>
     </Box>
