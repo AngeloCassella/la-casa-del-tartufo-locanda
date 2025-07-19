@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import { Box } from '@mui/material';
+import Bevande from './pages/Bevande'; // in alto tra gli import
+import Vini from './pages/Vini'; // in alto tra gli import
+
 
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/bevande" element={<Bevande />} />
+        <Route path="/vini" element={<Vini />} />
       </Routes>
       <Footer />
     </Box>

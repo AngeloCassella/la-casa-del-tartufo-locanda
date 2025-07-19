@@ -1,20 +1,20 @@
 [
   {
-    "nome": "Acqua naturale",
-    "descrizione": "Bottiglia da 1L",
-    "prezzo": "2€",
+    "nome": "Acqua Naturale",
+    "descrizione": "Bottiglia da 500ml di acqua naturale.",
+    "prezzo": "€1.50",
     "immagine": "acqua.jpg"
   },
   {
-    "nome": "Coca-Cola",
-    "descrizione": "Bottiglia da 33cl",
-    "prezzo": "3€",
-    "immagine": "coca.jpg"
+    "nome": "Coca Cola",
+    "descrizione": "Latina da 330ml di Coca Cola.",
+    "prezzo": "€2.50",
+    "immagine": "cocacola.jpg"
   },
   {
-    "nome": "Birra artigianale",
-    "descrizione": "Chiara alla spina 50cl",
-    "prezzo": "5€",
+    "nome": "Birra Artigianale",
+    "descrizione": "Bottiglia da 330ml di birra artigianale locale.",
+    "prezzo": "€4.00",
     "immagine": "birra.jpg"
   }
 ]

@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Box,
-  Drawer,
-  List,
-  ListItem,
-  ListItemText
-} from '@mui/material';
+import {AppBar,Toolbar,IconButton,Box,Drawer,List,ListItem,ListItemText} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -29,10 +20,11 @@ const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const navLinks = [
-    { label: 'MENU', to: '/' },
+    { label: 'MENU', to: '/menu' },
     { label: 'CARTA DEI VINI', to: '/' },
     { label: 'BEVANDE', to: '/' },
-    { label: 'ALTRO', to: '/' }
+    { label: 'ALTRO', to: '/' },
+    { label: 'HOME', to: '/' }
   ];
 
   return (
@@ -110,5 +102,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;

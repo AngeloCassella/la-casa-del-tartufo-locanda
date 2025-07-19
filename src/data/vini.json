@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Aglianico del Taburno",
+    "descrizione": "Vino rosso intenso, DOCG.",
+    "prezzo": "15€",
+    "immagine": "aglianico.jpg"
+  },
+  {
+    "nome": "Falanghina del Sannio",
+    "descrizione": "Vino bianco fresco, IGT.",
+    "prezzo": "13€",
+    "immagine": "falanghina.jpg"
+  }
+]
