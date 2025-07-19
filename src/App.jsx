@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { Box } from '@mui/material';
 import Bevande from './pages/Bevande'; // in alto tra gli import
 import Vini from './pages/Vini'; // in alto tra gli import
+import Menu from './pages/Menu'; // in alto tra gli import
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/bevande" element={<Bevande />} />
         <Route path="/vini" element={<Vini />} />
+        <Route path="/menu" element={<Menu />} />
       </Routes>
       <Footer />
     </Box>

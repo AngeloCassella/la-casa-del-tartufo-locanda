@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
-import welcomeImage from '../assets/menu/fotoDiBenvenuto.jpeg';
+import welcomeImage from '../assets/fotoDiBenvenuto.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 
