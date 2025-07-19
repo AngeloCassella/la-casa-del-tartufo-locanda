@@ -21,10 +21,9 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'MENU', to: '/menu' },
-    { label: 'CARTA DEI VINI', to: '/' },
-    { label: 'BEVANDE', to: '/' },
-    { label: 'ALTRO', to: '/' },
-    { label: 'HOME', to: '/' }
+    { label: 'CARTA DEI VINI', to: '/vini' },
+    { label: 'BEVANDE', to: '/bevande' },
+    { label: 'CAMERE', to: '/' }
   ];
 
   return (
