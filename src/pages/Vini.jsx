@@ -18,7 +18,7 @@ const Vini = () => {
           ← Torna alla Home
         </Button>
 
-        <Typography variant="h4" gutterBottom sx={{ color: '#7d1d1d' }}>
+        <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d' }}>
           Carta dei Vini
         </Typography>
 

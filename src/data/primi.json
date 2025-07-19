@@ -4,5 +4,11 @@
     "descrizione": "Pasta fresca con tartufo nero del Matese",
     "prezzo": "14€",
     "immagine": "primo1.jpg"
+  },
+    {
+    "nome": "Tagliatelle al tartufo",
+    "descrizione": "Tagliatelle fatte in casa con tartufo bianco",
+    "prezzo": "18€",
+    "immagine": "primo2.jpg"
   }
 ]

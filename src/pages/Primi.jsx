@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Typography, Grid, Container, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import bevande from '../data/bevande.json';
+import primi from '../data/primi.json';
 import ProductCard from '../components/ProductCard';
 
-const Bevande = () => {
+const Primi = () => {
   const navigate = useNavigate();
 
   return (
@@ -15,25 +15,25 @@ const Bevande = () => {
           sx={{ mb: 2 }}
           onClick={() => navigate('/')}
         >
-          Torna alla Home
+          ← Torna alla Home
         </Button>
 
         <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d' }}>
-          Bevande
+          I nostri Primi Piatti
         </Typography>
 
         <Grid container spacing={3} justifyContent="center">
-        {bevande.map((item, idx) => (
+        {primi.map((item, idx) => (
             <Grid item key={idx} xs={12} sm={6} md={4} 
                 sx={{ display: 'flex', justifyContent: 'center' }} >
-            <ProductCard product={item} assetFolder="bevande" />
+            <ProductCard product={item} assetFolder="primi" />
             </Grid>
         ))}
         </Grid>
+
       </Container>
     </Box>
   );
 };
 
-export default Bevande;
-
+export default Primi;

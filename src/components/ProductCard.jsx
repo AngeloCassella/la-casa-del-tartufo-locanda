@@ -6,7 +6,7 @@ function ProductCard({ product, assetFolder = 'bevande' }) {
         <Card raised sx={{ width: '100%', maxWidth: 320 }}>
             <CardMedia
                 component="img"
-                height="180"
+                height="180px"
                 image={require(`../assets/${assetFolder}/${product.immagine}`)}
                 alt={product.nome}
             />

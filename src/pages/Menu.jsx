@@ -1,8 +1,6 @@
 import React from 'react';
-import { Box, Typography, Grid, Card, CardActionArea, CardMedia, CardContent } from '@mui/material';
+import { Box, Typography, Grid, Card, CardActionArea, CardMedia, CardContent, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@mui/material';
-
 
 const categorieMenu = [
   {
@@ -32,13 +30,13 @@ const Menu = () => {
 
   return (
     <Box sx={{ p: 2 }}>
-        <Button
-          variant="outlined"
-          sx={{ mb: 2 }}
-          onClick={() => navigate('/')}
-        >
-          ← Torna alla Home
-        </Button>
+      <Button
+        variant="outlined"
+        sx={{ mb: 2 }}
+        onClick={() => navigate('/')}
+      >
+        ← Torna alla Home
+      </Button>
 
       <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d', mb: 4 }}>
         Esplora il Menu
@@ -46,20 +44,57 @@ const Menu = () => {
 
       <Grid container spacing={4} justifyContent="center">
         {categorieMenu.map((cat, idx) => (
-          <Grid item xs={12} sm={6} md={3} key={idx}>
-            <Card sx={{ borderRadius: 2, boxShadow: 4 }}>
-              <CardActionArea onClick={() => navigate(cat.link)}>
+          <Grid item key={idx}>
+            <Card
+              sx={{
+                width: 250,          // larghezza fissa
+                height: 220,         // altezza fissa
+                borderRadius: 2,
+                boxShadow: 4,
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              <CardActionArea
+                onClick={() => navigate(cat.link)}
+                sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+              >
                 <CardMedia
                   component="img"
-                  height="180"
                   image={cat.immagine}
                   alt={cat.nome}
+                  sx={{
+                    height: 180,
+                    width: '100%',
+                    objectFit: 'cover'
+                  }}
                 />
-                <CardContent>
-                  <Typography variant="h6" align="center" sx={{ color: '#333' }}>
+
+                <CardContent
+                  sx={{
+                    p: 0.5, // Riduce drasticamente il padding interno
+                    mt: 'auto', // Spinge il contenuto in basso solo se serve
+                    textAlign: 'center',
+                    minHeight: '60px', // o anche meno
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    sx={{
+                      color: '#333',
+                      fontWeight: 500,
+                      lineHeight: 1.1,
+                      m: 0 // nessun margine sopra/sotto
+                    }}
+                  >
                     {cat.nome}
                   </Typography>
                 </CardContent>
+
+
               </CardActionArea>
             </Card>
           </Grid>
