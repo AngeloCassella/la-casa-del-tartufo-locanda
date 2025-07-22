@@ -7,6 +7,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import SvgIcon from '@mui/material/SvgIcon';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.jpeg';
+import { useNavigate } from 'react-router-dom';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 
 const TikTokIcon = (props) => (
   <SvgIcon {...props}>
@@ -18,6 +20,17 @@ const Navbar = () => {
   // const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const [openDrawer, setOpenDrawer] = useState(false);
+  const navigate = useNavigate();
+
+  // Funzione per tornare alla pagina precedente
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+
+  // Funzione per tornare alla home
+  const handleGoHome = () => {
+    navigate('/');
+  };
 
   const navLinks = [
     { label: 'MENU', to: '/menu' },
@@ -37,12 +50,15 @@ const Navbar = () => {
           }}
         >
           {/* Lato sinistro */}
-          <Box display="flex" alignItems="center" gap={1}>
+          <Box display="flex" alignItems="center" gap={0.2}>
             <IconButton color="inherit" onClick={() => setOpenDrawer(true)}>
               <MenuIcon />
             </IconButton>
-            <IconButton color="inherit" href="/">
+            <IconButton color="inherit" onClick={handleGoHome}>
               <HomeIcon />
+            </IconButton>
+            <IconButton color="inherit" onClick={handleGoBack}>
+              <ArrowBackIcon />
             </IconButton>
           </Box>
 
@@ -68,17 +84,17 @@ const Navbar = () => {
           </Box>
 
           {/* Social */}
-          <Box display="flex" alignItems="center" gap={1}>
-            <IconButton color="inherit" href="https://facebook.com" target="_blank">
-              <FacebookIcon />
-            </IconButton>
-            <IconButton color="inherit" href="https://instagram.com" target="_blank">
-              <InstagramIcon />
-            </IconButton>
-            <IconButton color="inherit" href="https://tiktok.com" target="_blank">
-              <TikTokIcon />
-            </IconButton>
-          </Box>
+        <Box display="flex" alignItems="center" gap={0.2}>
+          <IconButton color="inherit" href="https://facebook.com" target="_blank">
+            <FacebookIcon />
+          </IconButton>
+          <IconButton color="inherit" href="https://instagram.com" target="_blank">
+            <InstagramIcon />
+          </IconButton>
+          <IconButton color="inherit" href="https://tiktok.com" target="_blank">
+            <TikTokIcon />
+          </IconButton>
+        </Box>
         </Toolbar>
       </AppBar>
 
