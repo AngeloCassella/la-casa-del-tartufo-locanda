@@ -93,8 +93,7 @@ const Menu = () => {
                     {cat.nome}
                   </Typography>
                 </CardContent>
-
-
+                
               </CardActionArea>
             </Card>
           </Grid>

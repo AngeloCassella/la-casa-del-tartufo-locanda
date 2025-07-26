@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SvgIcon from '@mui/material/SvgIcon';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.jpeg';
+import logo from '../assets/logo.png'; // Assicurati di avere il percorso corretto per il logo
 import { useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 
@@ -75,7 +75,7 @@ const Navbar = () => {
               src={logo}
               alt="Logo Locanda"
               style={{
-                height: '90px',
+                height: '100px',
                 maxHeight: '100%',
                 objectFit: 'contain',
                 borderRadius: 8,
