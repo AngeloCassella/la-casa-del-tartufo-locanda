@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Primi Piatti",
+    "immagine": "primi.jpg",
+    "link": "/Primi"
+  },
+  {
+    "nome": "Secondi",
+    "immagine": "secondi.jpg",
+    "link": "/secondi"
+  },
+  {
+    "nome": "Contorni",
+    "immagine": "contorni.jpg",
+    "link": "/contorni"
+  },
+  {
+    "nome": "Sfizzi",
+    "immagine": "sfizzi.jpg",
+    "link": "/sfizzi"
+  }
+]

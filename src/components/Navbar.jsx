@@ -62,36 +62,38 @@ const Navbar = () => {
             </IconButton>
           </Box>
 
-          {/* Logo centrale */}
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '100%',
+        {/* Logo centrale cliccabile */}
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100%',
+            cursor: 'pointer'
+          }}
+          onClick={handleGoHome}
+        >
+          <img
+            src={logo}
+            alt="Logo Locanda"
+            style={{
+              height: '100px',
+              maxHeight: '100%',
+              objectFit: 'contain',
+              borderRadius: 8
             }}
-          >
-            <img
-              src={logo}
-              alt="Logo Locanda"
-              style={{
-                height: '100px',
-                maxHeight: '100%',
-                objectFit: 'contain',
-                borderRadius: 8,
-              }}
-            />
-          </Box>
+          />
+        </Box>
 
           {/* Social */}
         <Box display="flex" alignItems="center" gap={0.2}>
-          <IconButton color="inherit" href="https://facebook.com" target="_blank">
+          <IconButton color="inherit" href="https://www.facebook.com/profile.php?id=61578689933278" target="_blank">
             <FacebookIcon />
           </IconButton>
-          <IconButton color="inherit" href="https://instagram.com" target="_blank">
+          <IconButton color="inherit" href="https://www.instagram.com/lacasadeltartufolocanda/" target="_blank">
             <InstagramIcon />
           </IconButton>
-          <IconButton color="inherit" href="https://tiktok.com" target="_blank">
+          <IconButton color="inherit" href="https://www.tiktok.com/@lacasadeltartufolocanda" target="_blank">
             <TikTokIcon />
           </IconButton>
         </Box>

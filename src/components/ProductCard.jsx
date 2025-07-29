@@ -1,26 +1,43 @@
 import React from 'react';
-import { Card, CardMedia, CardContent, Typography } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, CardActionArea } from '@mui/material';
 
-function ProductCard({ product, assetFolder = 'bevande' }) {
+function ProductCard({ product, assetFolder = 'bevande', onClick }) {
     return (
         <Card raised sx={{ width: '100%', maxWidth: 320 }}>
-            <CardMedia
-                component="img"
-                height="180px"
-                image={require(`../assets/${assetFolder}/${product.immagine}`)}
-                alt={product.nome}
-            />
-            <CardContent>
+            <CardActionArea onClick={onClick}>
+                <CardMedia
+                    component="img"
+                    height="180px"
+                    image={require(`../assets/${assetFolder}/${product.immagine}`)}
+                    alt={product.nome}
+                    sx={{ objectFit: 'cover' }}
+                />
+                <CardContent
+                sx={{
+                    textAlign: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: 80 // opzionale, garantisce un minimo di altezza
+                }}
+                >
                 <Typography gutterBottom variant="h6">
                     {product.nome}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                {product.descrizione && (
+                    <Typography variant="body2" color="text.secondary">
                     {product.descrizione}
-                </Typography>
-                <Typography variant="subtitle2" sx={{ mt: 1, color: '#7d1d1d' }}>
+                    </Typography>
+                )}
+                {product.prezzo && (
+                    <Typography variant="subtitle2" sx={{ mt: 1, color: '#7d1d1d' }}>
                     {product.prezzo}
-                </Typography>
-            </CardContent>
+                    </Typography>
+                )}
+                </CardContent>
+
+            </CardActionArea>
         </Card>
     );
 }
