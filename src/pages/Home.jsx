@@ -1,17 +1,17 @@
 import React from 'react';
 import { Box, Typography, Button, Stack } from '@mui/material';
-import welcomeImage from '../assets/fotoDiBenvenuto.jpeg';
+import welcomeImage from '../assets/fotoDiBenvenuto.webp';
 import { useNavigate } from 'react-router-dom';
 
-
 const Home = () => {
-  const navigate = useNavigate(); // ✅ per navigare tra le pagine
+  const navigate = useNavigate();
 
   return (
     <Box textAlign="center" py={4} sx={{ width: '100%' }}>
       <img
         src={welcomeImage}
         alt="Benvenuto"
+        loading="lazy" // ✅ Lazy loading per non bloccare subito il caricamento
         style={{ width: '90%', maxWidth: '700px', borderRadius: 8 }}
       />
 
@@ -48,7 +48,8 @@ const Home = () => {
         </Button>
 
         <Button
-          variant="contained" fullWidth
+          variant="contained"
+          fullWidth
           sx={{ backgroundColor: '#e0e0e0', color: '#000' }}
           onClick={() => navigate('/camere')}
         >
