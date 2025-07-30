@@ -1,0 +1,20 @@
+[
+  {
+    "nome": "Vini Rossi",
+    "descrizione": "Intensi, avvolgenti e strutturati: i nostri vini rossi raccontano il carattere autentico del territorio. Perfetti per accompagnare carni, formaggi stagionati e piatti ricchi di sapore.",
+    "immagine": "vino_rosso.jpg",
+    "link": "/vini/rosso"
+  },
+  {
+    "nome": "Vini Bianchi",
+    "descrizione": "Freschi, aromatici e raffinati. I nostri vini bianchi sono l’espressione più luminosa della tradizione vinicola, ideali per piatti di pesce, antipasti e formaggi delicati.",
+    "immagine": "vino_bianco.jpg",
+    "link": "/vini/bianco"
+  },
+  {
+    "nome": "Vini Rosé",
+    "descrizione": "Eleganti, fruttati e vivaci: i vini rosé offrono un’esperienza gustativa leggera ma intensa. Perfetti per l’aperitivo o per accompagnare piatti creativi e moderni.",
+    "immagine": "vino_rose.jpg",
+    "link": "/vini/rose"
+  }
+]

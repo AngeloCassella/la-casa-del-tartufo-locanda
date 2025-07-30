@@ -14,7 +14,7 @@ const Home = () => {
         loading="lazy" // ✅ Lazy loading per non bloccare subito il caricamento
         style={{ width: '90%', maxWidth: '700px', borderRadius: 8 }}
       />
-
+      
       <Typography variant="h5" sx={{ mt: 3, mb: 2 }}>
         Benvenuti alla Locanda "La Casa del Tartufo Locanda"
       </Typography>

@@ -1,37 +1,33 @@
 import React from 'react';
-import { Box, Typography, Grid, Container, Button } from '@mui/material';
+import { Box, Typography, Grid, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import vini from '../data/vini.json';
+import categorieVini from '../data/categorieVini.json';
 import ProductCard from '../components/ProductCard';
 
 const Vini = () => {
   const navigate = useNavigate();
 
   return (
-    <Box sx={{ py: 4 }}>
-      <Container>
-        <Button
-          variant="outlined"
-          sx={{ mb: 2 }}
-          onClick={() => navigate('/')}
-        >
-          ← Torna alla Home
-        </Button>
+    <Box sx={{ p: 2 }}>
+      <Button variant="outlined" sx={{ mb: 2 }} onClick={() => navigate('/')}>
+        ← Torna alla Home
+      </Button>
 
-        <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d' }}>
-          Carta dei Vini
-        </Typography>
+      <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d', mb: 4 }}>
+        I Nostri Vini
+      </Typography>
 
-        <Grid container spacing={3} justifyContent="center">
-        {vini.map((item, idx) => (
-            <Grid item key={idx} xs={12} sm={6} md={4} 
-                sx={{ display: 'flex', justifyContent: 'center' }} >
-            <ProductCard product={item} assetFolder="vini" />
-            </Grid>
+      <Grid container spacing={4} justifyContent="center">
+        {categorieVini.map((cat, idx) => (
+          <Grid item key={idx}>
+            <ProductCard
+              product={cat}
+              assetFolder="vini"
+              onClick={() => navigate(cat.link)}
+            />
+          </Grid>
         ))}
-        </Grid>
-
-      </Container>
+      </Grid>
     </Box>
   );
 };

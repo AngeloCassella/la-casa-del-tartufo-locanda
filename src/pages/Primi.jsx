@@ -13,9 +13,9 @@ const Primi = () => {
         <Button
           variant="outlined"
           sx={{ mb: 2 }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/menu')}
         >
-          ← Torna alla Home
+          ← Torna al Menù
         </Button>
 
         <Typography variant="h4" align="center" gutterBottom sx={{ color: '#7d1d1d' }}>
