@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "Camera Standard",
+    "descrizione": "Perfetta per soggiorni brevi, con letto matrimoniale, bagno privato e Wi-Fi gratuito.",
+    "immagine": "camera_standard.jpg",
+    "link": "/camere/standard"
+  },
+  {
+    "nome": "Camera Deluxe",
+    "descrizione": "Spaziosa e confortevole, con vista panoramica, aria condizionata e TV a schermo piatto.",
+    "immagine": "camera_deluxe.jpg",
+    "link": "/camere/deluxe"
+  },
+  {
+    "nome": "Suite",
+    "descrizione": "Elegante e lussuosa, con zona living, vasca idromassaggio e servizi premium.",
+    "immagine": "suite.jpg",
+    "link": "/camere/suite"
+  },
+    {
+    "nome": "Suite 2",
+    "descrizione": "Elegante e lussuosa, con zona living, vasca idromassaggio e servizi premium.",
+    "immagine": "suite2.jpg",
+    "link": "/camere/suite2"
+  }
+]

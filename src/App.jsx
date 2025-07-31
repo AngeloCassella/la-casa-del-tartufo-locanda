@@ -14,6 +14,7 @@ const Secondi = lazy(() => import('./pages/Secondi'));
 const VinoRosso = lazy(() => import('./pages/VinoRosso'));
 const VinoBianco = lazy(() => import('./pages/VinoBianco'));
 const VinoRose = lazy(() => import('./pages/VinoRose'));
+const Camere = lazy(() => import('./pages/Camere'));
 
 
 function App() {
@@ -30,10 +31,11 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/primi" element={<Primi />} />
           <Route path="/secondi" element={<Secondi />} />
-          <Route path="/vini/rosso" element={<VinoRosso />} />
-          <Route path="/vini/bianco" element={<VinoBianco />} />
-          <Route path="/vini/rose" element={<VinoRose />} />
-
+          <Route path="/vinoRosso" element={<VinoRosso />} />
+          <Route path="/vinoBianco" element={<VinoBianco />} />
+          <Route path="/vinoRose" element={<VinoRose />} />
+          <Route path="/camere" element={<Camere />} />
+          {/* Aggiungi altre rotte qui se necessario */}
         </Routes>
       </Suspense>
 

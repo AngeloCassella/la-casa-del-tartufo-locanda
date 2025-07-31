@@ -59,7 +59,7 @@ const Footer = () => {
           variant="caption"
           sx={{ whiteSpace: 'pre-line' }}
         >
-          © {new Date().getFullYear()} La Casa del Tartufo Locanda{"\n"}P.IVA: 12345678901
+          © {new Date().getFullYear()} La Casa del Tartufo Locanda{"\n"}P.IVA: IT01095380620
         </Typography>
       </Box>
     </Box>
