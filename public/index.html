@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#7d1d1d" />
-  <meta name="description" content="Consulta il menu digitale 'La Casa del Tartufo Locanda': vini, piatti tipici e prenotazioni." />
 
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
+  <title>La Casa del Tartufo Locanda – Menu, Vini, Camere a Cusano Mutri (BN)</title>
+  <meta name="description" content="Benvenuti alla Locanda La Casa del Tartufo Locanda: consulta il menu digitale, carta dei vini, bevande e informazioni su camere e prenotazioni a Cusano Mutri (BN)." />
+  <meta name="robots" content="index, follow" />
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lacasadeltartufolocand﻿a.it/" />
 
-  <!-- ✅ Favicon corretta -->
-  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <!-- Preload immagine hero (solo se è davvero in /public/assets/) -->
   <link rel="preload" as="image" href="%PUBLIC_URL%/assets/fotoDiBenvenuto.webp" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="La Casa del Tartufo Locanda – Menu, Vini, Camere" />
+  <meta property="og:description" content="Menu digitale, carta dei vini e camere a Cusano Mutri (BN)." />
+  <meta property="og:url" content="https://www.lacasadeltartufolocanda.it/" />
+  <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+  <meta property="og:site_name" content="La Casa del Tartufo Locanda" />
 
-  <!-- ❌ Impedisce indicizzazione: puoi rimuovere se vuoi che Google lo trovi -->
-  <meta name="robots" content="noindex, nofollow" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="La Casa del Tartufo Locanda – Menu, Vini, Camere" />
+  <meta name="twitter:description" content="Scopri il menu e la carta dei vini. Prenota ora." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
 
-  <title>Menu</title>
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "La Casa del Tartufo Locanda",
+    "url": "https://www.lacasadeltartufolocanda.it/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Via San Giovanni, 14",
+      "addressLocality": "Cusano Mutri",
+      "postalCode": "82033",
+      "addressRegion": "BN",
+      "addressCountry": "IT"
+    },
+    "telephone": "+39 3400663113",
+    "servesCuisine": "Italiana",
+    "image": "https://www.lacasadeltartufolocanda.it/og-image.jpg"
+  }
+  </script>
 </head>
+<body>
+  <script>
+    if (window.location.hostname.endsWith("netlify.app")) {
+      window.location.replace("https://www.lacasadeltartufolocanda.it");
+    }
+  </script>
 
-  <body>
-    <!-- 🚀 Questo script controlla se il sito è aperto da *.netlify.app
-         e in tal caso reindirizza verso il dominio personalizzato -->
-    <script>
-      if (window.location.hostname.endsWith("netlify.app")) {
-        window.location.replace("https://www.lacasadeltartufolocanda.it");
-      }
-    </script>
-
-    <noscript>App Menu</noscript>
-    <div id="root"></div>
-
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <noscript>App Menu</noscript>
+  <div id="root"></div>
+</body>
 </html>
