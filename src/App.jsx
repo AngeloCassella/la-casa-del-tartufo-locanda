@@ -16,7 +16,7 @@ const VinoBianco = lazy(() => import('./pages/VinoBianco'));
 const VinoRose = lazy(() => import('./pages/VinoRose'));
 const Camere = lazy(() => import('./pages/Camere'));
 
-
+  
 function App() {
   return (
     <Box sx={{ backgroundColor: '#f7f0e5', minHeight: '100vh', m: 0, p: 0 }}>
