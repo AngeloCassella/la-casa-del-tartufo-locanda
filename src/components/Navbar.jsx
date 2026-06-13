@@ -36,7 +36,7 @@ const Navbar = () => {
     { label: 'MENU', to: '/menu' },
     { label: 'CARTA DEI VINI', to: '/vini' },
     { label: 'BEVANDE', to: '/bevande' },
-    { label: 'CAMERE', to: '/' }
+    { label: 'CAMERE', to: '/camere' }
   ];
 
   return (

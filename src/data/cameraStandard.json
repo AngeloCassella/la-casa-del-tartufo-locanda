@@ -1,0 +1,24 @@
+{
+  "nome": "Camera Standard",
+  "prezzo": "€80 / notte",
+  "descrizione": "Camera accogliente e luminosa, ideale per coppie o viaggiatori che desiderano comfort e tranquillità.",
+  "bagno": "Bagno privato con doccia, asciugamani, asciugacapelli e prodotti di cortesia.",
+  "balcone": "Balcone privato con vista esterna.",
+  "dimensione": "22 m²",
+  "ospiti": "2 persone",
+  "letto": "1 letto matrimoniale",
+  "immagini": [
+    "camera1.jpg",
+    "camera2.jpg",
+    "camera3.jpg"
+  ],
+  "servizi": [
+    "Wi-Fi gratuito",
+    "Aria condizionata",
+    "Riscaldamento",
+    "TV",
+    "Frigo bar",
+    "Armadio",
+    "Set cortesia"
+  ]
+}

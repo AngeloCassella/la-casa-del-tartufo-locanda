@@ -15,6 +15,7 @@ const VinoRosso = lazy(() => import('./pages/VinoRosso'));
 const VinoBianco = lazy(() => import('./pages/VinoBianco'));
 const VinoRose = lazy(() => import('./pages/VinoRose'));
 const Camere = lazy(() => import('./pages/Camere'));
+const CameraStandard = lazy(() => import('./pages/CameraStandard'));
 
   
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/vinoBianco" element={<VinoBianco />} />
           <Route path="/vinoRose" element={<VinoRose />} />
           <Route path="/camere" element={<Camere />} />
+          <Route path="/cameraStandard" element={<CameraStandard />} />
           {/* Aggiungi altre rotte qui se necessario */}
         </Routes>
       </Suspense>
